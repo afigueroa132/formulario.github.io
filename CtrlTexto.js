@@ -1,8 +1,7 @@
 "use strict"
 var forma = document.getElementById("forma"),
-    campos = ["nombre", "edad", "email", "contraseña", "navegador", "usuario", "url", "telefono", "mensaje"],
-    salidas = ["salidaNombre", "SalidaEdad", "salidaEmail", "salidaContraseña", "salidaNavegador", "salidaUsuario", "salidaUrl",
-        "salidaTelefono", "salidaMensaje"];
+    campos = ["boleta", "nombre", "grupo", "materia"],
+    salidas = ["salidaNombre", "SalidaBoleta", "salidaGrupo", "salidaMateria"];
 
 forma.addEventListener("submit", procesa, false);
 function procesa() {
