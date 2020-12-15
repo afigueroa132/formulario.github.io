@@ -1,0 +1,90 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form id="forma" action="javascript:;">
+        <div class="form">
+            <h1>Registrate</h1>
+            <div class="grupo">
+                <input name="nombre" type="text" autofocus required pattern=".{1,30}" maxlength="30" size="33"><span
+                    class="barra"></span>
+                <label accesskey="N">Nombre</label>
+                <!-- <output id="salidaNombre"></output> -->
+            </div>
+
+            <div class="grupo">
+                <input name="edad" type="number" required><span class="barra"></span>
+                <label accesskey="N">Edad</label>
+                <!-- <output id="salidaEdad"></output> -->
+            </div>
+
+            <div class="grupo">
+                <input name="email" type="email" required size="33"><span class="barra"></span>
+                <label accesskey="E">E-mail</label>
+                <!-- <output id="salidaEmail"></output> -->
+            </div>
+
+            <div class="grupo">
+                <input type="password" name="contraseña" required pattern=".{5,30}" maxlength="30" size="33"><span
+                    class="barra"></span>
+                <label accesskey="S">Contraseña</label>
+                <!-- <output id="salidaContraseña"></output> -->
+            </div>
+
+            <div class="grupo">
+                <input type="text" name="navegador" required list="navegadores"><span class="barra"></span>
+                <label accesskey="B">Navegador</label>
+                <!-- <output id="salidaNavegador"></output> -->
+            </div>
+            <datalist id="navegadores">
+                <option value="Microsoft Edge">
+                <option value="Chrome">
+                <option value="Safari">
+                <option value="FireFox">
+                <option value="Opera">
+                <option value="Yahoo">
+            </datalist>
+
+            <!-- <div class="grupo">
+                <input name="usuario" type="text" pattern="[A-Za-z0-9]{4,16}" required maxlength="16" size="19"><span class="barra"></span>
+                <label accesskey="U">Usuario</label>
+                <output id="salidaUsuario"></output>
+            </div> -->
+
+            <!-- <div class="grupo">
+                <input name="url" type="url" required size="33" value="http://"><span class="barra"></span>
+                <label accesskey="H">Url Favorita</label>
+                <output id="salidaUrl"></output>
+            </div> -->
+
+            <div class="grupo">
+                <input name="telefono" type="tel" required pattern="\d{10,14}" size="14" maxlength="14"><span
+                    class="barra"></span>
+                <label accesskey="T">No. Teléfono</label>
+                <!-- <output id="salidaTelefono"></output> -->
+            </div>
+
+            <!-- <div class="grupo">
+                <textarea name="mensaje" required rows="3" cols="3"></textarea><span class="barra"></span>
+                <label accesskey="Q">Mensaje</label>
+                <<output id="salidaMensaje"></output> 
+            </div>-->
+
+            <button type="submit" value="Procesar" accesskey="P">Enviar</button>
+        </div>
+    </form>
+
+    <footer>
+        Copyright &copy; Axel Figueroa Cardona
+    </footer>
+    <script src="CtrlTexto.js"></script>
+</body>
+
+</html>
