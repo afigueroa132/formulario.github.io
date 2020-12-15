@@ -1,7 +1,7 @@
 "use strict"
 var forma = document.getElementById("forma"),
     campos = ["boleta", "nombre", "grupo", "materia"],
-    salidas = ["salidaBoleta", "SalidaNombre", "salidaGrupo", "salidaMateria"];
+    salidas = ["salidaBoleta", "salidaNombre", "salidaGrupo", "salidaMateria"];
 
 forma.addEventListener("submit", procesa, false);
 function procesa() {
